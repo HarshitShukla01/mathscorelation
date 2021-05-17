@@ -1,0 +1,16 @@
+.card-header{
+	background-color: lightgreen;
+}
+.card-body{
+	background-color: #c4f1ff;
+}
+.card-footer{
+	background-color: #c4f1ff;
+}
+
+.card-deck .card {
+    box-shadow: 8px 9px 10px 0px black;
+}
+body {
+    background-color: #F0F7D4;
+}

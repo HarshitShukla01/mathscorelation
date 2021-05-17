@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
+     <script src="index.js"></script>
+     <link rel="stylesheet" href="index.css">
+     <script >
+		
+	</script>
+	<title>Document</title>
+</head>
+<body >
+	<div class="container" style=" text-align: center;margin-top: 2%;">
+       <h1 style="font-family: 'Pattaya', sans-serif;">Welcome to Maths Instant Simplify</h1>
+	</div>
+	<div class="container" style="text-align: center; margin-top: 4%;">
+		<div class="card-deck">
+			<div class="card">
+				<div class="card-header"><h3>Partial/Multiple correlation</h3></div>
+                <div class="card-body">
+                    <label> <h5>For : r(ABC)</h5></label>
+                    <br>
+                    <label>A</label> <input type ="text" id="aforp" style="width: 35px;">
+                    <label>B</label> <input type ="text" id="bforp" style="width: 35px;">
+                    <label>C</label> <input type ="text" id="cforp" style="width: 35px;">
+                    <button id="btnn" style="margin-left: 10px;">Next</button>
+                </div>
+                <div id="pmfooter" class="card-footer" style="font-size: 20px; display: none;">
+                	<label id="ppab" style="font-weight: bold;">AB </label><input type ="text" id="abpar" style="width: 55px; margin-left: 25px;">
+                	<br>
+                	<label id="ppbc" style="font-weight: bold;">BC </label><input type ="text" id="bcpar" style="width: 55px; margin-left: 25px;">
+                	<br>
+                	<label id="ppac" style="font-weight: bold;">AC </label><input type ="text" id="acpar" style="width: 55px; margin-left: 25px;">
+                	<br>
+
+                	<input type="radio" id="pcr" name="crtype" value="partial">
+                    <label for="partial" style="font-weight: bold;">Partial </label>
+                    <label>[ r(AB.C) ]</label>
+                    <br>
+                    <input type="radio" id="mcr" name="crtype" value="multiple">
+                    <label for="multiple" style="font-weight: bold;">Multiple </label>
+                    <label>[ r(A.BC) ]</label>
+                    <br>
+
+                	<button  id="submitbtn" style="background-color: purple; font-size: 20px; width: 50%; color: yellow">Submit</button>
+                	<br>
+                	<label><h4>value :</h4> </label> <label id="pmfinal" style="font-weight: bold; background-color: lightgreen"> NULL</label>
+                </div>
+			</div>
+			
+			<div class="card">
+				<div class="card-header"><h3>Partial second order correlation</h3></div>
+                <div class="card-body">
+                    <label> <h5>For : r(AB.CD)</h5></label>
+                    <br>
+                    <label>A</label> <input type ="text" id="aforps" style="width: 35px;">
+                    <label>B</label> <input type ="text" id="bforps" style="width: 35px;">
+                    <label>C</label> <input type ="text" id="cforps" style="width: 35px;">
+                    <label>D</label> <input type ="text" id="dforps" style="width: 35px;">
+                    <button id="btnps" style="margin-left: 10px;">Next</button>
+                </div>
+                <div id="psfooter" class="card-footer" style="font-size: 20px; display: none;">
+                	<label id="psabd" style="font-weight: bold;">AB.D </label><input type ="text" id="abdspar" style="width: 55px; margin-left: 25px;">
+                	<br>
+                	<label id="psbcd" style="font-weight: bold;">BC.D </label><input type ="text" id="bcdspar" style="width: 55px; margin-left: 25px;">
+                	<br>
+                	<label id="psacd" style="font-weight: bold;">AC.D </label><input type ="text" id="acdspar" style="width: 55px; margin-left: 25px;">
+                	<br>
+    
+                	<button  id="submitbtnps" style="background-color: purple; font-size: 20px; width: 50%; color: yellow">Submit</button>
+                	<br>
+                	<label><h4>value :</h4> </label> <label id="psfinal" style="font-weight: bold; background-color: lightgreen"> NULL</label>
+                </div>
+			</div>
+		</div>
+        <div class="card-deck" style="margin-top: 20px;">
+			<div class="card">
+				<div class="card-header"><h3>Calculators</h3></div>
+				<div class="card-body"></div>
+			</div>
+
+			<div class="card">
+				<div class="card-header"><h3>Books Download</h3></div>
+				<div class="card-body"></div>
+			</div>
+		</div>
+	</div>	
+	
+</body>
+</html>
