@@ -46,16 +46,16 @@ $(document).ready(function(){
   });
   $("#submitbtnps").click(function(){
     
-    var chk=$('input[name="crtype"]:checked').val().toString();
     var abd=$("#abdspar").val();
     var bcd=$("#bcdspar").val();
     var acd=$("#acdspar").val();
-    console.log(ab);
-    console.log(bc);
-    console.log(ac);
+    console.log(abd);
+    console.log(bcd);
+    console.log(acd);
     
-    var sum=(abd-(acd*bcd))/(Math.sqrt(1-(acd*acd))*Math.sqrt(1-(bcd*bcd)));
-    $("#psfinal").text(sum.toFixed(3));
+    var sume=(abd-(acd*bcd))/(Math.sqrt(1-(acd*acd))*Math.sqrt(1-(bcd*bcd)));
+    console.log(sume);
+    $("#psfinal").text(sume.toFixed(3));
     
    }); 
 });
